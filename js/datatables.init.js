@@ -28,7 +28,7 @@ $(function () {
         "ajax": "../_app/Library/WcTable/_ajax/Table.ajax.php?arq=1"
     };
     
-    $('#example').DataTable($.extend(defaultTable,options));
+    var dataTable = $('#example').DataTable($.extend(defaultTable,options));
     
     
     //############# GERAIS

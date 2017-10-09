@@ -11,10 +11,22 @@ if (!function_exists("dt_actions")) {
 if (!function_exists("dt_date")) {
 
     function dt_date($Data) {
-        return date("D/m/Y", strtotime($Data));
+        return date("d/m/Y", strtotime($Data));
     }
 
 }
+
+if (!function_exists('dt_file')):
+
+    function dt_file($d) {
+        $file = sprintf("%s/uploads/%s", str_replace("/", DIRECTORY_SEPARATOR, dirname(dirname(dirname(dirname(dirname(__FILE__)))))), $d);
+        $Image = ($d && file_exists($file) && !is_dir($file) ? sprintf("%s/tim.php?src=uploads/%s&w=100,&h=70", BASE, $d) : "admin/_img/no_image.jpg");
+        return sprintf("<img src='%s' style='width=50px'>", $Image);
+    }
+
+endif;
+
+
 if (!function_exists("dt_decode")) {
 
     function dt_decode($arr) {
