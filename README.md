@@ -2,7 +2,7 @@ se a pasta vendor não existir execute o comando composer install
 
 Dentro do arquivo Config chame o autoload require 'Library/WcTable/vendor/autoload.php';
 
- 
+ ````
 <div class="dashboard_content">
     <script>
         var options = {
@@ -22,3 +22,4 @@ Dentro do arquivo Config chame o autoload require 'Library/WcTable/vendor/autolo
     $table = new \WcTable\Table($config);
     echo $table;
     ?>
+`````
