@@ -36,9 +36,9 @@ if ($PostData && isset($PostData['arq'])):
      * server-side, there is no need to edit below this line.
      */
 
-    $arr = \WcTable\Ssp::simple($PostData, $sql_details, $table, $primaryKey, $columns);
+    $jSON = \WcTable\Ssp::simple($PostData, $sql_details, $table, $primaryKey, $columns);
     //a função dt_decode esta no helpers table
-    $jSON['data'] = array_map("dt_decode", $arr['data']);
+    $jSON['data'] = array_map("dt_decode", $jSON['data']);
     //RETORNA O CALLBACK
     if ($jSON):
         echo json_encode($jSON);
