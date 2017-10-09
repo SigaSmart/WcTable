@@ -1,0 +1,18 @@
+{
+    "name": "caltj/wc-table",
+    "authors": [
+        {
+            "name": "Claudio Campos",
+            "email": "callcocam@sigasmart.com.br"
+        }
+    ],
+    "autoload":{
+      "files":[
+        "helpers/table.php"
+        ],
+        "psr-4":{
+            "WcTable\\" :"src/"
+        }
+    },
+    "require": {}
+}

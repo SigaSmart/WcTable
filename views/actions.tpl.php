@@ -1,0 +1,2 @@
+<a title="Editar {title}!" href="dashboard.php?wc={route}/{create}&id={id}" class="btn btn_blue icon-pencil icon-notext"></a>
+<a callback="{callback}" callback_action="{action}" class="dt_delete_action btn btn_red icon-cancel-circle icon-notext" id="{id}"></a>
